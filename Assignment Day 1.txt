@@ -1,0 +1,395 @@
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ ls
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ code README.md
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ ls
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ code README.md
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ ls
+README.md
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ code instructions.txt
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ ls
+instructions.txt  README.md
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        instructions.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git add .
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   instructions.txt
+
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   instructions.txt
+
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git commit -m "Add two files Readme and instructions"
+[master (root-commit) 38ed898] Add two files Readme and instructions
+ 2 files changed, 7 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 instructions.txt
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ code README.md
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git add *.md
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git commit -m "Modify README.md file by adding h4 tag"
+[master 8abf95b] Modify README.md file by adding h4 tag
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git log
+commit 8abf95ba83add38c6537246ecb855e7c164fe4e7 (HEAD -> master)
+Author: sparsh singh <sparsh.singh@zensar.com>
+Date:   Tue Jul 14 22:26:01 2020 +0530
+
+    Modify README.md file by adding h4 tag
+
+commit 38ed898df17990bc27691a6b83f2d66731df839e
+Author: sparsh singh <sparsh.singh@zensar.com>
+Date:   Tue Jul 14 22:11:29 2020 +0530
+
+    Add two files Readme and instructions
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git log --oneline
+8abf95b (HEAD -> master) Modify README.md file by adding h4 tag
+38ed898 Add two files Readme and instructions
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git reset HEAD~1
+Unstaged changes after reset:
+M       README.md
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git log
+commit 38ed898df17990bc27691a6b83f2d66731df839e (HEAD -> master)
+Author: sparsh singh <sparsh.singh@zensar.com>
+Date:   Tue Jul 14 22:11:29 2020 +0530
+
+    Add two files Readme and instructions
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git add .
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ code README.md
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git commit -m "Revert changes to README.md"
+[master 5d0de94] Revert changes to README.md
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ code README.md
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git log
+commit 5d0de94de2ed8783f8fddf81728c27b9a25ef5a6 (HEAD -> master)
+Author: sparsh singh <sparsh.singh@zensar.com>
+Date:   Tue Jul 14 22:43:53 2020 +0530
+
+    Revert changes to README.md
+
+commit 38ed898df17990bc27691a6b83f2d66731df839e
+Author: sparsh singh <sparsh.singh@zensar.com>
+Date:   Tue Jul 14 22:11:29 2020 +0530
+
+    Add two files Readme and instructions
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git reset --hard HEAD~1
+HEAD is now at 38ed898 Add two files Readme and instructions
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ code README.md
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git reflog
+38ed898 (HEAD -> master) HEAD@{0}: reset: moving to HEAD~1
+5d0de94 HEAD@{1}: commit: Revert changes to README.md
+38ed898 (HEAD -> master) HEAD@{2}: reset: moving to HEAD~1
+8abf95b HEAD@{3}: commit: Modify README.md file by adding h4 tag
+38ed898 (HEAD -> master) HEAD@{4}: commit (initial): Add two files Readme and instructions
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git reset --hard HEAD~1
+fatal: ambiguous argument 'HEAD~1': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ code index.html
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ ls
+index.html  instructions.txt  README.md
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git add .
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git commit -m "Create index.html file"
+[master 61a404a] Create index.html file
+ 1 file changed, 15 insertions(+)
+ create mode 100644 index.html
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git remote add origin https://github.com/sparshh31/github-demo.git
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sparshh31/github-demo.git/'
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 899 bytes | 179.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/sparshh31/github-demo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ ls
+index.html  instructions.txt  README.md
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git log --oneline
+61a404a (HEAD -> master, origin/master) Create index.html file
+38ed898 Add two files Readme and instructions
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git checkout -b feature
+Switched to a new branch 'feature'
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (feature)
+$ ls
+index.html  instructions.txt  README.md
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (feature)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git -b test-branch
+unknown option: -b
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git branch test-branch
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git branch
+  feature
+* master
+  test-branch
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (master)
+$ git checkout test-branch
+Switched to branch 'test-branch'
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (test-branch)
+$ ls
+index.html  instructions.txt  README.md
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (test-branch)
+$ git diff test-branch master
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (test-branch)
+$ code index.html
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (test-branch)
+$ git status
+On branch test-branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (test-branch)
+$ git add .
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (test-branch)
+$ git commit -m "Add new table tag in index.html test-branch"
+[test-branch 1372913] Add new table tag in index.html test-branch
+ 1 file changed, 15 insertions(+), 1 deletion(-)
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (test-branch)
+$ git status
+On branch test-branch
+nothing to commit, working tree clean
+
+DELL@DESKTOP-ISB88NL MINGW64 /d/Zensar Training/DotNet training (test-branch)
+$ git diff test-branch master
+diff --git a/index.html b/index.html
+index 24da951..caae1ee 100644
+--- a/index.html
++++ b/index.html
+@@ -11,19 +11,5 @@
+             <li>Logitech Mouse</li>
+             <li>Mouse Pads</li>
+         </u1>
+-        <table border="2">
+-            <tr>
+-                <td>EmpID</td>
+-                <td>EmpName</td>
+-            </tr>
+-            <tr>
+-                <td>100</td>
+-                <td>David</td>
+-            </tr>
+-            <tr>
+-                <td>101</td>
+-                <td>allan</td>
+-            </tr>
+-        </table>
+     </body>
