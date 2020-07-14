@@ -1,0 +1,4 @@
+Follow the following instructions to work with this web project
+This project is done using Dot Net Core.
+It is a MVC project
+The database used in this project is SOL SERVER
